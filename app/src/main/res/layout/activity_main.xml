@@ -10,37 +10,38 @@
     <EditText
         android:id="@+id/xeditText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=b151453efefc24a3ed2fb130d19c4299targetDt=20211001"
+        android:layout_height="94dp"
         android:hint="사이트 주소 입력"
-        />
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/dateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFA521"
+        android:text="CHECK THE BOX OFFICE DATE"
+        android:textColor="#010935"
+        android:textStyle="bold"
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/xbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="요청하기" />
+        android:background="#FF9F11"
+        android:backgroundTint="#FFA828"
+        android:text="Request"
+        android:textColor="#E206166E"
+        android:textStyle="bold" />
 
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="#0027FF"
+        android:backgroundTint="#0027FF" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <TextView
-                android:id="@+id/xtextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp" />
-            <TextView
-                android:id="@+id/xtextView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp" />
-        </LinearLayout>
-    </ScrollView>
 
 </LinearLayout>
